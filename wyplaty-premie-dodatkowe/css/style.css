@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 20px;
+    color: grey;
+    background-color: whitesmoke;
+}
+
+#pracownicy {
+    padding-bottom: 20px;
+    font-size: 17px;
+    text-align: center;
+    background-color: lightgrey;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+#pracownicy h2 {
+    padding: 20px 0;
+    color: goldenrod;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#pracownicy h3 {
+    padding: 30px 0;
+    color: goldenrod;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#pracownicy #oblicz {
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    font-size: 20px;
+    color: grey;
+    text-transform: uppercase;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: color .3s, border .3s;
+}
+
+#pracownicy #oblicz:hover {
+    color: goldenrod;
+    border: 2px solid grey;
+}
+
+#pracownicy #title {
+    display: flex;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#pracownicy #title span {
+    flex-basis: 25%;
+}
+
+#pracownicy div[id*='pracownik'] {
+    display: flex;
+}
+
+#pracownicy div[id*='pracownik'] span,
+#pracownicy div[id*='pracownik'] input {
+    flex-basis: 25%;
+    padding: 2px 0;
+    margin: 2px;
+}
+
+#pracownicy div[id*='pracownik'] span {
+    font-weight: bold;
+}
+
+#pracownicy div[id*='pracownik'] input {
+    text-align: center;
+    color: grey;
+    background-color: whitesmoke;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+}
+
+.bonus-payment-color {
+    color: green;
+}
+
+.below-average-peyment-color {
+    color: firebrick;
+}
+
+#pracownicy li {
+    padding: 10px 0;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+#pracownicy li span {
+    text-transform: lowercase;
+    color: grey;
+}
