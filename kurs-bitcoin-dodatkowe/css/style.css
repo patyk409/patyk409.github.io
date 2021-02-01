@@ -1,0 +1,19 @@
+button {
+    padding: 5px 20px;
+    color: whitesmoke;
+    background-color: limegreen;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    color: green;
+}
+
+.fa-grip-lines {
+    color: blue;
+}
+
+.fa-arrow-down {
+    color: red;;
+}
