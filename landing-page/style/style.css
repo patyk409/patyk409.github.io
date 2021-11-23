@@ -1,0 +1,13 @@
+.showcase-img {
+  max-height: 300px;
+}
+
+.team-img {
+  max-width: 200px;
+}
+
+.form-bg {
+  background-image: url('../img/slider-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
