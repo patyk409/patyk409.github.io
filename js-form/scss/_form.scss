@@ -1,0 +1,71 @@
+.heading {
+  padding: 1rem 1rem 0;
+  color: $primary-color;
+  text-align: center;
+}
+
+.book-form {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom: 0.2rem solid $secondary-colr;
+
+  label {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+  }
+
+  .title-input,
+  .author-input,
+  select {
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    position: relative;
+    width: 100%;
+    max-width: 15rem;
+    background-color: #fff;
+    border: 0.1rem solid $primary-color;
+    transition: border 0.15s;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.warning {
+      border: 0.1rem solid $secondary-colr;
+    }
+
+    option {
+      text-align: center;
+      background-color: #fff;
+    }
+  }
+
+  .submit-btn {
+    padding: 0.6rem 0;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 10rem;
+    font-size: 1rem;
+    border: 0.1rem solid $primary-color;
+    background-color: #fff;
+    cursor: pointer;
+    transition: color 0.15s, border 0.15s;
+
+    &:hover {
+      color: $secondary-colr;
+      border: 0.1rem solid $secondary-colr;
+    }
+  }
+
+  ul li {
+    margin: 0.5rem 0;
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: $secondary-colr;
+  }
+}
