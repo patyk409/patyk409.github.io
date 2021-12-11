@@ -33,7 +33,7 @@ const createBookList = () => {
     bookListItem.appendChild(bookHeading)
 
     const bookImage = document.createElement('img')
-    bookImage.setAttribute('src', '../img/book.png')
+    bookImage.setAttribute('src', './img/book.png')
     bookImage.setAttribute('alt', 'book-img')
     bookHeading.appendChild(bookImage)
 
