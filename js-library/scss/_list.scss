@@ -1,0 +1,36 @@
+.book-list {
+  padding: 1rem;
+  background-color: $primary-color;
+
+  .book-list-item {
+    margin: 1rem auto;
+    list-style: none;
+    width: 100%;
+    max-width: 30rem;
+
+    .book-heading {
+      padding: 1.4rem 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      border: 0.2rem solid $secondary-colr;
+
+      img {
+        width: 6rem;
+      }
+
+      .book-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        text-align: left;
+
+        span {
+          font-weight: bold;
+          color: $secondary-colr;
+        }
+      }
+    }
+  }
+}
