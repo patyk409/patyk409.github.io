@@ -1,0 +1,48 @@
+.summary_section {
+  position: sticky;
+  bottom: 0;
+  padding: 40px 0;
+  width: 100%;
+  color: $light_color;
+  background-color: $primary_color;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+
+  &.visibility {
+    transform: translateY(0);
+  }
+
+  /*
+    SUMMARY BAR
+  */
+  .summary_wrapper {
+    margin: 0 auto;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    width: $content_width;
+
+    /*
+      SUMMARY HEAD
+    */
+    .summary_head {
+      margin: 0 145px 0 0;
+
+      .summary_title {
+        font-size: 28px;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    /*
+      SUMMARY COST
+    */
+    .summary_cost {
+      padding: 15px 35px;
+      font-size: 18px;
+      font-weight: 700;
+      color: $dark_color;
+      background-color: $light_color;
+    }
+  }
+}

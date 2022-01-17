@@ -1,0 +1,73 @@
+.head_section {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  width: $section_width;
+
+  /*
+    HEAD IMAGE
+  */
+  .head_img {
+    margin: 25px;
+    width: $img_width;
+  }
+
+  /*
+    DESCRIPTION
+  */
+  .description {
+    width: $description_width;
+    margin: 30px auto 30px 20px;
+
+    .section_header {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $primary_color;
+    }
+
+    .description_section {
+      margin-top: 40px;
+
+      /*
+        TITLE
+      */
+      .description_title {
+        font-size: 28px;
+      }
+
+      .description_content {
+        margin-top: 40px;
+      }
+
+      /*
+        PARAMETER BOX
+      */
+      .parameter_box {
+        margin-top: 25px;
+        padding: 15px 20px;
+        background-color: $primary_color;
+        color: $light_color;
+
+        .parameter_item {
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid $line_green;
+
+          .parameter_title {
+            width: 250px;
+          }
+        }
+      }
+
+    /*
+      PRICE
+    */
+      .price {
+        margin-top: 25px;
+        font-size: 22px;
+      }
+    }
+  }
+}

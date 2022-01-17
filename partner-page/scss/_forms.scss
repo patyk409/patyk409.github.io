@@ -1,0 +1,126 @@
+.form {
+  margin: 0 auto 0;
+  padding: 60px 25px;
+  max-width: 1210px;
+
+  /*
+    FORM HEAD
+  */
+  .head_box {
+    padding-bottom: 40px;
+    border-bottom: 1px solid $line_grey;
+
+    .head_title {
+      margin-bottom: 25px;
+      color: $primary_color;
+      font-size: 28px;
+    }
+  }
+
+  .form_container {
+    /*
+      FORM BOX
+    */
+    .form_section {
+      padding: 40px 0;
+      border-bottom: 1px solid $line_grey;
+
+      .form_caption {
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary_color;
+      }
+
+      /*
+        INPUT GROUP
+      */
+      .input_group {
+        display: flex;
+        align-items: flex-start;
+
+        &.small {
+          justify-content: space-between;
+          width: calc(100% - 370px);
+        }
+
+        .column_left,
+        .column_right {
+          display: flex;
+          flex-direction: column;
+          flex-basis: 50%;
+
+          /*
+            LABELS
+          */
+          label {
+            padding: 10px 30px 10px 0;
+            margin: 0 0 20px 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: 700;
+
+            &.no_space {
+              margin: 0;
+            }
+
+            .txt_bold {
+              margin: 0 0 0 auto;
+              width: calc(100% - 30px);
+
+              &.sublabel {
+                margin: 15px 0 15px auto;
+              }
+            }
+
+            span {
+              margin: 20px 0 0 auto;
+              font-weight: 400;
+              width: calc(100% - 30px);
+
+              &.txt_light {
+                margin: 0 0 0 auto;
+              }
+            }
+
+            /*
+              INPUTS
+            */
+            input[type='radio'] {
+              width: 15px;
+              height: 15px;
+            }
+
+            input[type='number'] {
+              margin: 0 auto 0 30px;
+              padding: 5px;
+              width: 85px;
+              border: 1px solid $input_color;
+            }
+          }
+        }
+
+        /*
+          IMAGES
+        */
+        .img_box {
+          display: flex;
+          flex-direction: column;
+          width: $form_img_width;
+          
+          .form_img {
+            margin: -53px 0 0 0;
+            width: $form_img_width;
+            height: $form_img_heigth;
+            object-fit: cover;
+
+            &.img_space {
+              margin: 40px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
